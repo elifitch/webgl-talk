@@ -1,0 +1,82 @@
+@import "./components/work.scss";
+@import "./components/particle.scss";
+@import "./components/properties.scss";
+
+.reveal .emojicon {
+	font-family: sans-serif;
+	text-shadow: none;
+}
+
+.animated-gradient {
+	background: linear-gradient(135deg, #2980b9 0%,#9B59B6 100%);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.reveal pre {
+	box-shadow: none;
+	// font-size: .4em;
+}
+.reveal {
+	.stack {
+		position: relative;
+		min-height: 400px;
+	}
+	.stack__item {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+.js-random-anim span {
+	display: inline-block;
+	// opacity: 0;
+}
+.img--expandable {
+	background: white !important;
+}
+.img--expandable:hover {
+	transform: scale(1.5)translateY(-25%);
+}
+body {
+	background: linear-gradient(135deg, #2980b9 0%,#9B59B6 100%)
+}
+
+//thanks
+.thanks path {
+	fill: none;
+	stroke-width: 3;
+	stroke: white;
+	stroke-linejoin: round;
+}
+.thanks .draw {
+	stroke-dashoffset: 0;
+}
+.t__stick {
+	stroke-dasharray: 140px;
+	stroke-dashoffset: 140px;
+}
+.t__hat {
+	stroke-dasharray: 210px;
+	stroke-dashoffset: 210px;
+}
+.hanks {
+	stroke-dasharray: 1300px;
+	stroke-dashoffset: 1300px;
+}
+.expl__dot {
+	stroke-dasharray: 20px;
+	stroke-dashoffset: 20px;
+}
+.expl__stroke {
+	stroke-dasharray: 100px;
+	stroke-dashoffset: 100px;
+}
+.underline {
+	stroke-dasharray: 370px;
+	stroke-dashoffset: 370px;
+}
