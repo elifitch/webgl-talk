@@ -14,18 +14,11 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #f7f2d3;
-  background: -moz-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #f7f2d3));
-  background: -webkit-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -o-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -ms-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
   background-color: #f7f3de; }
 
 .reveal {
   font-family: "Adelle Sans";
-  font-size: 36px;
+  font-size: 32px;
   font-weight: normal;
   letter-spacing: -0.02em;
   color: #333; }
@@ -47,8 +40,8 @@ body {
   margin: 0 0 20px 0;
   color: #333;
   font-family: "Adelle Sans";
-  line-height: 0.9em;
-  letter-spacing: 0.02em;
+  line-height: 1;
+  letter-spacing: none;
   text-transform: none;
   text-shadow: none; }
 

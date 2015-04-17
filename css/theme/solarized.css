@@ -20,12 +20,11 @@ html * {
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #fdf6e3;
   background-color: #fdf6e3; }
 
 .reveal {
   font-family: "Adelle Sans";
-  font-size: 36px;
+  font-size: 32px;
   font-weight: normal;
   letter-spacing: -0.02em;
   color: #657b83; }
@@ -47,8 +46,8 @@ body {
   margin: 0 0 20px 0;
   color: #586e75;
   font-family: "Adelle Sans";
-  line-height: 0.9em;
-  letter-spacing: 0.02em;
+  line-height: 1;
+  letter-spacing: none;
   text-transform: none;
   text-shadow: none; }
 

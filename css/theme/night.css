@@ -9,7 +9,6 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #111;
   background-color: #111; }
 
 .reveal {
@@ -34,9 +33,9 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #eee;
+  color: rgba(0, 0, 0, 0.8);
   font-family: "Montserrat", Impact, sans-serif;
-  line-height: 0.9em;
+  line-height: 1;
   letter-spacing: -0.03em;
   text-transform: none;
   text-shadow: none; }

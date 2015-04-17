@@ -2,24 +2,30 @@
 // overridden by the super-theme
 
 // Background of the presentation
-$backgroundColor: #2b2b2b;
+// $backgroundColor: #2b2b2b;
+$backgroundColor: #FAFAFA;
 
 // Primary/body text
 // $mainFont: 'Lato', sans-serif;
 $mainFont: 'Adelle Sans';
-$mainFontSize: 36px;
+// $mainFontSize: 36px;
+$mainFontSize: 32px;
 $mainColor: #eee;
 
 // Headings
 $headingMargin: 0 0 20px 0;
 // $headingFont: 'League Gothic', Impact, sans-serif;
 $headingFont: 'Adelle Sans';
-$headingColor: #eee;
-$headingLineHeight: 0.9em;
-$headingLetterSpacing: 0.02em;
+// $headingColor: #eee;
+$headingColor: rgba(0,0,0,0.8);
+// $headingLineHeight: 0.9em;
+$headingLineHeight: 1;
+// $headingLetterSpacing: 0.02em;
+$headingLetterSpacing: none;
 // $headingTextTransform: uppercase;
 $headingTextTransform: none;
-$headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+// $headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+$headingTextShadow: none;
 $heading1TextShadow: $headingTextShadow;
 
 // Links and actions

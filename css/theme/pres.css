@@ -3133,8 +3133,51 @@
 .img--expandable:hover {
   transform: scale(1.5) translateY(-25%); }
 
-body {
-  background: linear-gradient(135deg, #2980b9 0%, #9B59B6 100%); }
+h1, .alpha {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  text-align: center; }
+  h1:after, .alpha:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    z-index: -1;
+    width: 100%;
+    height: 10px;
+    background-color: #BEF03E; }
+
+.reveal .meme {
+  font-family: 'impact' !important;
+  font-size: 5em;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 900%; }
+  .reveal .meme:after {
+    display: none; }
+
+h2, .beta {
+  text-align: left; }
+
+.reveal ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: 40px;
+  border-top: 10px solid black;
+  width: 100%; }
+  .reveal ul li {
+    margin-bottom: 40px; }
+
+.reveal .embed {
+  width: 100%;
+  height: 60vh; }
+
+.text-left {
+  text-align: left; }
 
 .thanks path {
   fill: none;
