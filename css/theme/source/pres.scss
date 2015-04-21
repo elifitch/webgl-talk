@@ -22,6 +22,7 @@ $color-green: #BEF03E;
 	// font-size: .4em;
 }
 .reveal {
+	  background-color: #FAFAFA;
 	.stack {
 		position: relative;
 		min-height: 400px;
@@ -34,6 +35,15 @@ $color-green: #BEF03E;
 		height: 100%;
 	}
 }
+canvas {
+	visibility: visible !important;
+	opacity: 0.1;
+}
+
+canvas.force-visible {
+	opacity: 1 !important;
+}
+
 .js-random-anim span {
 	display: inline-block;
 	// opacity: 0;
@@ -65,6 +75,11 @@ h1, .alpha {
 
 	}
 	// padding-bottom: 4px;
+}
+.no-underline {
+	&:after {
+		background-color: transparent;
+	}
 }
 .reveal .meme {
 	font-family: 'impact' !important;

@@ -3114,15 +3114,24 @@
 .reveal pre {
   box-shadow: none; }
 
-.reveal .stack {
-  position: relative;
-  min-height: 400px; }
-.reveal .stack__item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
+.reveal {
+  background-color: #FAFAFA; }
+  .reveal .stack {
+    position: relative;
+    min-height: 400px; }
+  .reveal .stack__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+canvas {
+  visibility: visible !important;
+  opacity: 0.1; }
+
+canvas.force-visible {
+  opacity: 1 !important; }
 
 .js-random-anim span {
   display: inline-block; }
@@ -3147,6 +3156,9 @@ h1, .alpha {
     width: 100%;
     height: 10px;
     background-color: #BEF03E; }
+
+.no-underline:after {
+  background-color: transparent; }
 
 .reveal .meme {
   font-family: 'impact' !important;
