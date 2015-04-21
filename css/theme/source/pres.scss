@@ -38,10 +38,16 @@ $color-green: #BEF03E;
 canvas {
 	visibility: visible !important;
 	opacity: 0.1;
+	transition: opacity 0.2s;
+}
+canvas.out {
+	opacity: 0;
+	transition: opacity 0.2s;
 }
 
 canvas.force-visible {
 	opacity: 1 !important;
+	transition: opacity 0.2s;
 }
 
 .js-random-anim span {

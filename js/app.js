@@ -1,4 +1,5 @@
 var renderer;
+var $canvas;
 
 function webGlBg() {
   var containter;
@@ -27,7 +28,7 @@ function webGlBg() {
 
     scene = new THREE.Scene();
 
-    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 2000);
+    camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 10, 2000);
 
     scene.add(camera);
     camera.position.set(0, 0, -100);
@@ -41,14 +42,9 @@ function webGlBg() {
 
   function createObjects() {
 
-    var hemiLight = new THREE.HemisphereLight(0xFFFFFF, 0x32D3E8, 1);
+    var hemiLight = new THREE.HemisphereLight(0xFFFFFF, 0x8FDDE8, 1);
 
-    var ambientLight = new THREE.AmbientLight(0x171717);
-
-    // var worldGeo = new THREE.SphereGeometry(10, 32, 32);
-    // var worldTexture = THREE.ImageUtils.loadTexture('img/earth-8k.jpg');
-    // var worldMat = new THREE.MeshLambertMaterial({map: worldTexture});
-    // world = new THREE.Mesh(worldGeo, worldMat);
+    // var ambientLight = new THREE.AmbientLight(0x070707);
 
     var shapeCount = 50;
     var shapeMat = new THREE.MeshLambertMaterial({color: 0xBEF03E});
@@ -81,7 +77,7 @@ function webGlBg() {
     
     window.cloud = cloud
     scene.add(cloud);
-    scene.add(ambientLight);
+    // scene.add(ambientLight);
     scene.add(hemiLight);
   }
 
@@ -104,19 +100,25 @@ function webGlBg() {
 webGlBg();
 
 Reveal.addEventListener('ready', function(event) {
-  // $('.backgrounds')[0].insertBefore(renderer.domElement, $('.backgrounds')[0]);
-  // $('.backgrounds')[0].appendChild(renderer.domElement);
   $('.backgrounds').after(renderer.domElement);
-  // $('canvas').addClass('force-visible');
+  $canvas = $('canvas');
 });
 
 Reveal.addEventListener('slidechanged', function(event) {
-  console.log(event.currentSlide)
-  if( !$(event.currentSlide).is('[data-background]') ) {
-    console.log( 'asdf' )
-    console.log( $(event.currentSlide).attr('data-background') )
-    // $('canvas').addClass('force-visible');
+  console.log(event.currentSlide);
+  var $current = $(event.currentSlide);
+
+  if( $current.is('[data-background]') ) {
+    $canvas.addClass('out');
+  } else if( $canvas.hasClass('out') ) {
+    $canvas.removeClass('out')
   }
+
+  // for end 
+  if($current.is('[data-final-slide]')) {
+    $('canvas').addClass('force-visible');
+  }
+  
 });
 
 Reveal.addEventListener( 'fragmentshown', function( event ) {

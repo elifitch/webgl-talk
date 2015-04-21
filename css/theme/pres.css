@@ -3128,10 +3128,16 @@
 
 canvas {
   visibility: visible !important;
-  opacity: 0.1; }
+  opacity: 0.1;
+  transition: opacity 0.2s; }
+
+canvas.out {
+  opacity: 0;
+  transition: opacity 0.2s; }
 
 canvas.force-visible {
-  opacity: 1 !important; }
+  opacity: 1 !important;
+  transition: opacity 0.2s; }
 
 .js-random-anim span {
   display: inline-block; }
