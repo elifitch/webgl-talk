@@ -107,10 +107,10 @@ Reveal.addEventListener('ready', function(event) {
 });
 
 Reveal.addEventListener('slidechanged', function(event) {
-  console.log(event.currentSlide);
+  console.log(event);
   var $current = $(event.currentSlide);
 
-  if( $current.is('[data-background]') ) {
+  if( $current.is('[data-background]') || $current.is('[data-background-iframe]') ) {
     $canvas.addClass('out');
   } else if( $canvas.hasClass('out') ) {
     $canvas.removeClass('out')

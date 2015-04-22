@@ -1,8 +1,14 @@
-@import "./components/work.scss";
-@import "./components/particle.scss";
-@import "./components/properties.scss";
+// @import "./components/work.scss";
+// @import "./components/particle.scss";
+// @import "./components/properties.scss";
 
 $color-green: #BEF03E;
+
+
+//overriding JS zoom
+.reveal .slides {
+	zoom: 1 !important
+}
 
 .reveal .emojicon {
 	font-family: sans-serif;
@@ -35,6 +41,21 @@ $color-green: #BEF03E;
 		height: 100%;
 	}
 }
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+	color: #000;
+	text-transform: none;
+	font-weight: inherit;
+	line-height: 1;
+	font-family: 'adelle sans';
+}
+
+.reveal { font-size: 32px; }
+.reveal h1 { font-size: 3.77em; }
+.reveal h2 { font-size: 2.11em;	}
+.reveal h3 { font-size: 1.55em;	}
+.reveal h4 { font-size: 1em;	}
+
+
 canvas {
 	visibility: visible !important;
 	opacity: 0.1;
