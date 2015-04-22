@@ -50,6 +50,9 @@
 .reveal h4 {
   font-size: 1em; }
 
+.reveal li h3 {
+  font-size: 40px; }
+
 canvas {
   visibility: visible !important;
   opacity: 0.1;
@@ -115,8 +118,8 @@ h2, .beta {
   list-style-type: none;
   margin: 0;
   padding-top: 40px;
-  border-top: 10px solid black;
-  width: 100%; }
+  border-top: 5px solid #BEF03E;
+  width: auto; }
   .reveal ul li {
     margin-bottom: 40px; }
 

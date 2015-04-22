@@ -47,7 +47,8 @@ function webGlBg() {
     // var ambientLight = new THREE.AmbientLight(0x070707);
 
     var shapeCount = 50;
-    var shapeMat = new THREE.MeshLambertMaterial({color: 0xBEF03E});
+    // var shapeMat = new THREE.MeshLambertMaterial({color: 0xBEF03E});
+    var shapeMat = new THREE.MeshLambertMaterial({color: 0x999999});
     shapeMat.shading = THREE.FlatShading;
     cloud = new THREE.Object3D();
 
@@ -114,6 +115,14 @@ Reveal.addEventListener('slidechanged', function(event) {
     $canvas.addClass('out');
   } else if( $canvas.hasClass('out') ) {
     $canvas.removeClass('out')
+  }
+
+  if($current.is('[data-append-iframe]')) {
+    // $('iframe.embed').remove();
+    if(!$current.find('iframe').length) {
+      $current.css('top', 0);
+      $current.append( '<iframe class="embed" src='+ $current.attr('data-append-iframe') +' frameborder="0"></iframe>' );
+    }
   }
 
   // for end 

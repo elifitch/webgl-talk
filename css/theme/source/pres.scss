@@ -55,6 +55,12 @@ $color-green: #BEF03E;
 .reveal h3 { font-size: 1.55em;	}
 .reveal h4 { font-size: 1em;	}
 
+.reveal h2 {
+	// max-width: 80%;
+}
+.reveal li h3 {
+	font-size: 40px;
+}
 
 canvas {
 	visibility: visible !important;
@@ -137,8 +143,11 @@ h2, .beta {
 	list-style-type: none;
 	margin: 0;
 	padding-top: 40px;
-	border-top: 10px solid black;
-	width: 100%;
+	// border-top: 10px solid black;
+	// border-top: 5px solid black;
+	border-top: 5px solid $color-green;
+	// width: 100%;
+	width: auto;
 	li {
 		margin-bottom: 40px
 	}
