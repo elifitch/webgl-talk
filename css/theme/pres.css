@@ -98,7 +98,7 @@ h1, .alpha {
   position: absolute;
   width: 100%;
   left: 0;
-  top: 900%; }
+  top: 55vh; }
   .reveal .meme:after {
     display: none; }
 
@@ -160,5 +160,3 @@ h2, .beta {
 .underline {
   stroke-dasharray: 370px;
   stroke-dashoffset: 370px; }
-
-/*# sourceMappingURL=pres.css.map */
