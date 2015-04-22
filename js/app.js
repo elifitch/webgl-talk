@@ -68,7 +68,7 @@ function webGlBg() {
       shape.position.multiplyScalar(
         Math.floor(Math.random() * (200 - 50 + 1)) + 50
       );
-      shape.rotationFactor = Math.random() * 0.02 - 0.01;
+      shape.rotationFactor = Math.random() * 0.03 - 0.015;
       console.log(pX)
 
       cloud.add(shape);
@@ -90,6 +90,8 @@ function webGlBg() {
     cloud.rotation.z += 0.0005;
     cloud.children.forEach(function(child, index, children) {
       child.rotation.x += child.rotationFactor;
+      child.rotation.y += child.rotationFactor;
+      child.rotation.z += child.rotationFactor;
     })
     // controls.update();
 
@@ -120,48 +122,4 @@ Reveal.addEventListener('slidechanged', function(event) {
   }
   
 });
-
-Reveal.addEventListener( 'fragmentshown', function( event ) {
-    if( event.fragment.classList.contains('isl-arrow') ) {
-      var arrow = document.getElementsByClassName('isl-arrow__arrow')[0]
-      arrow.classList.add('draw-arrow')
-    }
-
-    if( event.fragment.classList.contains('js-build-left') ) {
-      buildLeft();
-    }
-    if( event.fragment.classList.contains('js-destroy-left') ) {
-      destroyLeft();
-    }
-    if( event.fragment.classList.contains('js-build-trans') ) {
-      buildTrans();
-    }
-    if( event.fragment.classList.contains('js-destroy-trans') ) {
-      destroyTrans();
-    }
-
-    if( event.fragment.classList.contains('js-show-gradient') ) {
-      animGrad();
-    }
-    if( event.fragment.classList.contains('js-remove-gradient') ) {
-      killAnimGrad();
-    }
-
-    if( event.fragment.classList.contains('js-ind-trans-trigger') ){
-      indTrans();
-    }
-    if( event.fragment.classList.contains('js-boing-trigger') ){
-      boing();
-    }
-    if( event.fragment.classList.contains('js-anim-curve-trigger') ){
-      curve();
-    }
-    if( event.fragment.classList.contains('js-random-anim') ){
-      randomAnim();
-    }
-    if( event.fragment.classList.contains('js-thanks') ){
-      thanksAnim();
-    }
-    
-} );
 
