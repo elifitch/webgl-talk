@@ -102,9 +102,28 @@ function webGlBg() {
 
 webGlBg();
 
+function gui() {
+    // add the control panel
+    var gui = new dat.GUI();
+    var text = {
+      textColor: '#000000',
+      font: ['adelle sans', 'sharpie', 'bambi']
+    }
+    // add the backgroundColor control and wait for a change
+    gui.addColor(text, 'textColor').onChange(function(){
+        // when a change occurs, navigate the DOM to 'body' and update the CSS for the background color
+        $(".gui-text").css('color', text.textColor)
+    });
+    gui.add(text, 'font', ['adelle sans', 'sharpie', 'bambi bold']).onChange(function(){
+      $(".gui-text").css('font-family', text.font);
+    })
+};
+
 Reveal.addEventListener('ready', function(event) {
   $('.backgrounds').after(renderer.domElement);
   $canvas = $('canvas');
+
+  gui();
 });
 
 Reveal.addEventListener('slidechanged', function(event) {
@@ -121,7 +140,7 @@ Reveal.addEventListener('slidechanged', function(event) {
     // $('iframe.embed').remove();
     if(!$current.find('iframe').length) {
       $current.css('top', 0);
-      $current.append( '<iframe class="embed embed--full" src='+ $current.attr('data-append-iframe') +' frameborder="0"></iframe>' );
+      $current.append( '<iframe class="embed embed--full '+ $current.attr('data-shim') +' " src='+ $current.attr('data-append-iframe') +' frameborder="0"></iframe>' );
     }
   }
   if($current.is('[data-kill-iframe]')) {
@@ -136,6 +155,18 @@ Reveal.addEventListener('slidechanged', function(event) {
   // for end 
   if($current.is('[data-final-slide]')) {
     $('canvas').addClass('force-visible');
+  }
+
+  //for video backgrounds
+  if($current.is('[data-background-video]')) {
+    $canvas.addClass('out');
+    $('.backgrounds video').parent().addClass('video-bg');
+  }
+
+  if($current.is('[data-gui-slide]')) {
+    $('.dg.ac').addClass('show');
+  } else {
+    $('.dg.ac').removeClass('show');
   }
   
 });
