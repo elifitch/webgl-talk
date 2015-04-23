@@ -42,13 +42,16 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
+				<section class="text-center">
 					<h1 class="alpha">Dimensional / Shift</h1>
 					<h2 class="text-center">Embracing WebGL in interactive design</h2>
 				</section>
 
 				<section>
-					<h2 class="fragment">Hi</h2>
+					<!-- <h2 class="fragment">Hi</h2> -->
+					<h2 class="fragment">
+						<img class="text-img" src="img/hi.png" alt="">
+					</h2>
 					<h2 class="fragment">I'm Maggie</h2>
 					<h2 class="fragment">and I'm Eli</h2>
 				</section>
@@ -59,47 +62,69 @@
 
 				<section class="text-left">
 					<!-- <h2>We're going to talk about how we worked together to create an awesome project in a subgenre neither of us had worked in before</h2> -->
-					<h2>Tonight we'll be shrieking about</h2>
+					<h2 class="list-heading">Tonight we'll be shrieking about</h2>
 					<ul>
-						<li class="fragment"><h3>What WebGL is.</h2></li>
-						<li class="fragment"><h3>What we changed about how we work to get it done.</h2></li>
-						<li class="fragment"><h3>How to approach designing for 3d.</h2></li>
-						<li class="fragment"><h3>Why WebGL development mostly isn't terrifying.</h2></li>
+						<li class="fragment"><h3>What WebGL is.</h3></li>
+						<li class="fragment"><h3>What we changed about how we work to get it done.</h3></li>
+						<li class="fragment"><h3>How to approach designing for 3d.</h3></li>
+						<li class="fragment"><h3>Why WebGL development mostly isn't terrifying.</h3></li>
 					</ul>
 				</section>
 
-				<section>
+				<section class="text-center">
 					<h1>So what's WebGL?</h1>
 				</section>
 
 				<section>
 					<h2>Basically, it's 3d for the web.</h2>
 					<h2 class="fragment">No plugins.</h2>
-					<h2 class="fragment">No bullshit.</h2>
+					<!-- <h2 class="fragment">No bullshit.</h2> -->
+					<h2 class="fragment">No <img src="img/bullshit.png" alt="" class="text-img"></h2>
 				</section>
 
-				<section>
+				<section class="text-center">
 					<h1>It just works.</h1>
 				</section>
 
-				<section data-append-iframe="http://spacecraftforall.com/">
+				<!-- <section data-append-iframe="http://spacecraftforall.com/">
 				</section>
 
-				<section data-append-iframe="http://oos.moxiecode.com/js_webgl/xwing/">
+				<section data-kill-iframe="http://spacecraftforall.com/" data-append-iframe="http://oos.moxiecode.com/js_webgl/xwing/">
 				</section>
 
 
-				<section data-append-iframe="http://threejs.org/examples/webgl_shaders_ocean">
+				<section data-kill-iframe="http://oos.moxiecode.com/js_webgl/xwing/" data-append-iframe="http://threejs.org/examples/webgl_shaders_ocean">
 				</section>
 
-				<section data-append-iframe="http://f8-viz.js.islprojects.com">
+				<section data-kill-iframe="http://threejs.org/examples/webgl_shaders_ocean" data-append-iframe="http://sentdex.com/global-sentiment-analysis/">
 				</section>
 
-				<section>
+				<section data-kill-iframe="http://sentdex.com/global-sentiment-analysis/">
 					<h2>Cool right?</h2>
+				</section> -->
+				<section>
+					<iframe class="embed embed--full embed--full-shim" src="http://spacecraftforall.com/" frameborder="0"></iframe>
 				</section>
 
-				<section>
+				<section data-kill-iframe="http://spacecraftforall.com/" data-append-iframe="http://hellorun.helloenjoy.com/">
+					<!-- <iframe class="embed" src="http://oos.moxiecode.com/js_webgl/xwing/" frameborder="0"></iframe> -->
+				</section>
+
+
+				<section class="iframe-lock" data-kill-iframe="http://hellorun.helloenjoy.com/" data-append-iframe="http://oos.moxiecode.com/js_webgl/water_noise/">
+					<!-- <iframe class="embed" src="http://threejs.org/examples/webgl_shaders_ocean" frameborder="0"></iframe> -->
+				</section>
+
+				<section data-kill-iframe="http://oos.moxiecode.com/js_webgl/water_noise/" data-append-iframe="http://sentdex.com/global-sentiment-analysis/">
+					<!-- <iframe class="embed" src="http://sentdex.com/global-sentiment-analysis/" frameborder="0"></iframe> -->
+				</section>
+
+				<section data-kill-iframe="http://sentdex.com/global-sentiment-analysis/">
+					<!-- <h2>Cool right?</h2> -->
+					<h2> <img src="img/coolright2.png" alt="" class="text-img"> </h2>
+				</section>
+
+				<section class="text-center">
 					<h1>Yeah. So what.</h1>
 					<aside class="notes">
 						webgl is regarded as a neat curiosity, the stuff of cool demos we just showed you, and not much more
@@ -107,27 +132,27 @@
 				</section>
 
 				<section>
-					<h2>Why don't we see WebGL more?</h2>
+					<h2 class="list-heading">Why don't we see WebGL more?</h2>
 					<ul>
 						<li class="fragment">
-							<h2>
+							<h3>
 								It's outside the comfort zone of our profession.
-							</h2>
+							</h3>
 						</li>
 						<li class="fragment">
-							<h2>
+							<h3>
 								Designers are used to working and comping in a 2d context.
-							</h2>
+							</h3>
 						</li>
 						<li class="fragment">
-							<h2>
+							<h3>
 								3D graphics is a field that doesn't overlap much with web development.
-							</h2>
+							</h3>
 						</li>
 						<li class="fragment">
-							<h2>
+							<h3>
 								In the end, it's seen as just a curiosity.
-							</h2>
+							</h3>
 						</li>
 					</ul>
 					<aside class="notes">
@@ -138,7 +163,7 @@
 					</aside>
 				</section>
 
-				<section data-background="img/snape.jpg">
+				<section class="text-center" data-background="img/snape.jpg">
 					<h1 class="meme fragment">The Internet is Ready</h1>
 					<aside class="notes">
 						The thing is, it's really not just a curiosity anymore
@@ -148,17 +173,45 @@
 
 
 				<section>
-					<h2>No but seriously</h2>
+					<h2 class="list-heading">No but seriously</h2>
 					<ul>
 						<li class="fragment">
-							<h2>
+							<h3>
 								It's literally ready.
-							</h2>
+							</h3>
+						</li>
+					</ul>
+
+					<aside class="notes">
+						Easy to dismiss something out of hand with the idea that it wont work on folks' browsers, or they wont "get" it, or they won't appreciate it
+						<br><br>
+						1. roughly 80% browser support; The rest of the world is ready for this.
+						<br><br>
+
+
+					</aside>
+				</section>
+
+				<section class="text-center">
+					<img src="img/usage.png" alt="" style="width:100%">
+
+					<aside class="notes">
+						
+					</aside>
+				</section>
+
+				<section>
+					<h2 class="list-heading">No but seriously</h2>
+					<ul>
+						<li>
+							<h3>
+								It's literally ready.
+							</h3>
 						</li>
 						<li class="fragment">
-							<h2>
+							<h3>
 								It brings another ... <span class="fragment"><b>dimension </b></span>
-							</h2>
+							</h3>
 						</li>
 					</ul>
 
@@ -176,27 +229,27 @@
 				</section>
 
 				<section data-transition="none">
-					<h2>No butt super seriously this time</h2>
+					<h2 class="list-heading">No butt super seriously this time</h2>
 					<ul>
 						<li>
-							<h2>
+							<h3>
 								It's literally ready.
-							</h2>
+							</h3>
 						</li>
 						<li>
-							<h2>
-								It brings another dimension <span class="fragment">to your work.</span>
-							</h2>
+							<h3>
+								It brings another dimension to your work.
+							</h3>
 						</li>
 						<!-- <li class="fragment">
-							<h2>
+							<h3>
 								Three.js makes it not so monsterously horrible.
-							</h2>
+							</h3>
 						</li> -->
 						<li class="fragment">
-							<h2>
+							<h3>
 								It captures the imagination. That matters.
-							</h2>
+							</h3>
 						</li>
 					</ul>
 
@@ -206,7 +259,7 @@
 					</aside>
 				</section>
 
-				<section>
+				<section class="text-center">
 					<h1>So lets talk about <br>how we figured this out.</h1>
 
 					<aside class="notes">
@@ -215,13 +268,13 @@
 				</section>
 
 				<section>
-					<h2>Kickoff</h2>
+					<h2 class="list-heading">Kickoff</h2>
 					<ul>
 						<li class="fragment">
-							<h2>Decided on 3d from the beginning</h2>
+							<h3>Decided on 3d from the beginning</h3>
 						</li>
 						<li class="fragment">
-							<h2>Totally essential when exploring a new medium</h2>
+							<h3>Totally essential when exploring a new medium</h3>
 						</li>
 					</ul>
 
@@ -235,11 +288,11 @@
 				</section>
 
 				<!-- <section>
-					<h2>Flip the tables on traditional process</h2>
+					<h2 class="list-heading">Flip the tables on traditional process</h2>
 					<ul></ul>
 				</section> -->
 				
-				<section>
+				<section class="text-center">
 					<h1 class="no-underline">(╯°□°）╯︵  ssǝɔoɹd</h1>
 				</section>
 
@@ -259,10 +312,8 @@
 					</aside>
 				</section>
 				
-				<section data-background="#BEF03E">
-					<h2>
-						The closer interaction is to the core of a project, the more collaborative you should try to be.
-					</h2>
+				<section class="text-center" data-background="#BEF03E" style="font-size: 1.4em">
+					<h2 class="text-center">The closer interaction is to the core of a project, the more collaborative you should try to be.</h2>
 
 					<aside class="notes">
 						- Beyond just webgl, the closer interaction is to the core of the product, the more collaborative the design process will need to be if its ever going to be any good
@@ -273,7 +324,7 @@
 					</aside>
 				</section>
 
-				<section>
+				<section class="text-center">
 					<h1>Prototyping is invaluable.</h1>
  
 					<aside class="notes">
@@ -282,16 +333,16 @@
 				</section>
 
 				<section>
-					<h2>Continual Prototyping</h2>
+					<h2 class="list-heading">Continual Prototyping</h2>
 					<ul>
 						<li class="fragment">
-							<h2>Discover & assess posibilities</h2>
+							<h3>Discover & assess posibilities</h3>
 						</li>
 						<li class="fragment">
-							<h2>Design & dev iterate at same pace</h2>
+							<h3>Design & dev iterate at same pace</h3>
 						</li>
 						<li class="fragment">
-							<h2>It saves time in undiscovered country</h2>
+							<h3>It saves time in undiscovered country</h3>
 						</li>
 					</ul>
 
@@ -301,7 +352,7 @@
 					</aside>
 				</section>
 				
-				<section>
+				<section class="text-center">
 					<h1>Embrace uncertainty.</h1>
  
 					<aside class="notes">
@@ -327,14 +378,14 @@
 				</section>
 
 				<section>
-					<h2>Imperfection is inevitable.</h2>
+					<h2><img src="img/imperfection.png" alt="" class="text-img"> is inevitable.</h2>
  
 					<aside class="notes">
 						Don't always know if something will work until you try.
 					</aside>
 				</section>
 
-				<section data-background="#BEF03E">
+				<section class="text-center" data-background="#BEF03E">
 					<h1>Design <span class="color-white"> differently</span>.</h1>
  
 					<aside class="notes">
@@ -422,7 +473,7 @@
 					</aside>
 				</section>
 
-				<section>
+				<section class="text-center">
 					<h1>Devs. <span class="fragment">No more Kansas.</span></h1>
  
 					<aside class="notes"></aside>
@@ -446,7 +497,7 @@
 					<aside class="notes"></aside>
 				</section>
 
-				<section data-background="#BEF03E">
+				<section class="text-center" data-background="#BEF03E">
 					<h1 class="fragment text-center">ಠ__ಠ</h1>
 					<h2 class="fragment text-center">"Oh so now you tell me<br>I should have paid attention in skule."</h2>
  
@@ -480,7 +531,7 @@
 					</aside>
 				</section>
 
-				<section>
+				<section class="text-center">
 					<h1>Don't be afraid.</h1>
 					<aside class="notes">
 						Try it. It's motherfucking badass
@@ -506,8 +557,10 @@
 					</aside>
 				</section>
 
-				<section data-background="#BEF03E">
+				<section class="text-center" data-background="#BEF03E">
 					<h1>Get out there and play.</h1>
+					<h2 class="text-center fragment">@elifitch</h2>
+					<h2 class="text-center fragment">@moonstompmaggie</h2>
  
 					<aside class="notes">
 
@@ -518,64 +571,7 @@
 					</aside>
 				</section>
 
-				<!-- <section data-background="#BEF03E">
-					<h1>Plot Twist!</h1>
-					<h2 class="text-center">All this isn't just for WebGL</h2>
- 
-					<aside class="notes">
-						Everything we just talked about good for any project where you're tackling a new medium
-
-					</aside>
-				</section>
-
-				<section>
-					<h2>Collaboration, prototyping, being comfortable learning on the run, all this is a huge help whenever creating in a new, unfamiliar medium.</h2>
-					
- 
-					<aside class="notes">
-						Everything we just talked about good for any project where you're tackling a new medium
-
-					</aside>
-				</section>
-
-				<section>
-					<h2>Come up with a better ending</h2>
-					
- 
-					<aside class="notes">
-						Everything we just talked about good for any project where you're tackling a new medium
-
-					</aside>
-				</section>
-
-				<section>
-					<h2>TLDR</h2>
-					<ul>
-						<li class="fragment">
-							<h2>WebGL</h2>
-						</li>
-						<li class="fragment">
-							<h2></h2>
-						</li>
-						<li class="fragment">
-							<h2></h2>
-						</li>
-						<li class="fragment">
-							<h2></h2>
-						</li>
-					</ul>
- 
-					<aside class="notes">
-						- Think it's a curiosity? Fine. Use it as such to get a feel for it. Make an "ooh aah" piece of a larger build. Interactive hero, whatever
-
-						- Don't wait for someone to win a webgl project or pitch it to a client. Build it into something normal.
-
-						- Get out there and experiment
-
-					</aside>
-				</section> -->
-
-				<section data-final-slide>
+				<section class="text-center" data-final-slide>
 					<h1>Thanks!</h1>
 					
  
@@ -601,6 +597,7 @@
 
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
+
 			Reveal.initialize({
 				controls: false,
 				progress: false,
@@ -620,6 +617,15 @@
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
+			Reveal.configure({
+				keyboard: {
+					//space
+					32: 'next',
+					//b
+					66: 'next'
+				}
+			})
 
 		</script>
 
