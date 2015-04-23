@@ -183,6 +183,25 @@ h2, .beta {
   .dg.ac.show {
     display: block; }
 
+.relative-full {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.bottom {
+  position: absolute;
+  bottom: 0; }
+
+.bottom--left {
+  left: 0; }
+
+.bottom--right {
+  right: 0; }
+
+.bottom--center {
+  left: 50%;
+  transform: translateX(-50%); }
+
 .thanks path {
   fill: none;
   stroke-width: 3;

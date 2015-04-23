@@ -136,7 +136,8 @@ Reveal.addEventListener('slidechanged', function(event) {
     $canvas.removeClass('out')
   }
 
-  if($current.is('[data-append-iframe]')) {
+  if($current.is('[data-append-iframe]') && window.location.pathname.indexOf('notes') === -1) {
+    console.log(window.location.pathname.indexOf('notes'))
     // $('iframe.embed').remove();
     if(!$current.find('iframe').length) {
       $current.css('top', 0);
