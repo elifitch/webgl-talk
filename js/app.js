@@ -141,7 +141,7 @@ Reveal.addEventListener('slidechanged', function(event) {
     // $('iframe.embed').remove();
     if(!$current.find('iframe').length) {
       $current.css('top', 0);
-      $current.append( '<iframe class="embed embed--full '+ $current.attr('data-shim') +' " src='+ $current.attr('data-append-iframe') +' frameborder="0"></iframe>' );
+      $current.append( '<iframe class="embed" src='+ $current.attr('data-append-iframe') +' frameborder="0"></iframe>' );
     }
   }
   if($current.is('[data-kill-iframe]')) {
