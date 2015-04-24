@@ -53,6 +53,11 @@
 .reveal li h3 {
   font-size: 50px; }
 
+.reveal h2 a {
+  color: inherit; }
+  .reveal h2 a:hover {
+    color: #b0e912; }
+
 .text-img.text-img.text-img.text-img {
   margin: 0;
   background: none;
