@@ -29,6 +29,17 @@ $color-green: #BEF03E;
   font-weight:  700;
 }
 
+@font-face {
+  font-family: 'Impact';
+  src: url('../../fonts/Impact.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/Impact.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../../fonts/Impact.woff') format('woff'), /* Modern Browsers */
+       url('../../fonts/Impact.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../../fonts/Impact.svg#21f59b54f62b5b8b4bc0f63f0f617fc1') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
 
 //overriding JS zoom
 .reveal .slides {
@@ -167,7 +178,7 @@ h1, .alpha {
 	}
 }
 .reveal .meme {
-	font-family: 'impact' !important;
+	font-family: 'Impact' !important;
 	font-size: 5em;
 	color: #fff;
 	text-transform: uppercase;

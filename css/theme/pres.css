@@ -16,6 +16,15 @@
   font-style: normal;
   font-weight: 700; }
 
+@font-face {
+  font-family: 'Impact';
+  src: url('../../fonts/Impact.eot');
+  /* IE9 Compat Modes */
+  src: url('../../fonts/Impact.eot?#iefix') format('embedded-opentype'), url('../../fonts/Impact.woff') format('woff'), url('../../fonts/Impact.ttf') format('truetype'), url('../../fonts/Impact.svg#21f59b54f62b5b8b4bc0f63f0f617fc1') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+
 .reveal .slides section {
   text-align: left; }
 
@@ -132,7 +141,7 @@ h1, .alpha {
   background-color: transparent; }
 
 .reveal .meme {
-  font-family: 'impact' !important;
+  font-family: 'Impact' !important;
   font-size: 5em;
   color: #fff;
   text-transform: uppercase;
