@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'Adelle Sans';
+  src: url('../font/AdelleSans-Regular.eot');
+  /* IE9 Compat Modes */
+  src: url('../font/AdelleSans-Regular.eot?#iefix') format('embedded-opentype'), url('../font/AdelleSans-Regular.woff') format('woff'), url('../font/AdelleSans-Regular.ttf') format('truetype'), url('../font/AdelleSans-Regular.svg#88d442e0cdd4640325fec34cfd8dd028') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Adelle Sans';
+  src: url('../font/AdelleSans-Bold.eot');
+  /* IE9 Compat Modes */
+  src: url('../font/AdelleSans-Bold.eot?#iefix') format('embedded-opentype'), url('../font/AdelleSans-Bold.woff') format('woff'), url('../font/AdelleSans-Bold.ttf') format('truetype'), url('../font/AdelleSans-Bold.svg#2d546e14fd484986647adb533612e561') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700; }
+
 .reveal .slides section {
   text-align: left; }
 
@@ -33,7 +51,7 @@
   text-transform: none;
   font-weight: inherit;
   line-height: 1;
-  font-family: 'adelle sans'; }
+  font-family: 'Adelle Sans', 'helvetica', sans-serif; }
 
 .reveal {
   font-size: 32px; }

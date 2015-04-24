@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Adelle Sans';
+  src: url('AdelleSans-Bold.eot'); /* IE9 Compat Modes */
+  src: url('AdelleSans-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('AdelleSans-Bold.woff') format('woff'), /* Modern Browsers */
+       url('AdelleSans-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('AdelleSans-Bold.svg#2d546e14fd484986647adb533612e561') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
